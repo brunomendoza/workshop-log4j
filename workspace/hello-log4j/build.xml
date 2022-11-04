@@ -1,0 +1,18 @@
+<project name="hello-log4j">
+    <property name="src.dir" value="src" />
+
+    <property name="main.dir" value="${src.dir}/main" />
+    <property name="main.java.dir" value="${main.dir}/java" />
+    <property name="main.resources.dir" value="${main.dir}/resources" />
+
+    <property name="target.dir" value="target" />
+    <property name="classes.dir" value="${target.dir}/classes" />
+
+    <target name="clean">
+        <delete dir="${target.dir}" />
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${target.dir}" />
+    </target>
+</project>
